@@ -1,0 +1,56 @@
+.sm {
+  z-index:100;
+}
+
+.sm-simple ul > li {
+  width: 100%;
+}
+
+.sm-simple {
+  background: transparent;
+  border: none;
+  box-shadow: none;
+}
+
+.sm-simple > li {
+  border-left: none;
+}
+
+.sm-simple > li:first-child > a {
+  margin-left: -20px;
+}
+
+.sm-simple > li > a:hover {
+  background: transparent;
+  font-size: inherit;
+}
+
+.sm-simple a {
+  background: white;
+}
+
+.sm-simple a:hover,
+.sm-simple a:focus,
+.sm-simple a:active,
+.sm-simple a.highlighted {
+  background: var(--color-yellow);
+}
+
+.sm-simple > li > a,
+.sm-simple > li > a.highlighted,
+.sm-simple > li > a:active,
+.sm-simple > li > a:focus,
+.sm-simple > li > a:hover {
+  color: white;
+  background: transparent;
+  font-family: var(--font-titles);
+  letter-spacing: .5px;
+  font-weight: 700;
+}
+
+.sm-simple > li > a.highlighted,
+.sm-simple > li > a:active,
+.sm-simple > li > a:focus,
+.sm-simple > li > a:hover {
+  color: var(--color-yellow);
+}

@@ -1,0 +1,31 @@
+.button--round {
+  box-sizing: border-box;
+  display: inline-block;
+  position: relative;
+  text-align: center;
+  line-height: normal;
+  cursor: pointer;
+  padding: .25em 1.5em;
+  border: 1px solid var(--color-shadow-gray);
+  border-radius: 1em;
+  background-color: var(--color-light-gray);
+  color: var(--color-text-gray);
+  text-decoration: none;
+  font-weight: 600;
+  -webkit-transition: all 0.1s;
+  transition: all 0.1s;
+  -webkit-font-smoothing: antialiased;
+  &:hover {
+    background-color: var(--color-shadow-gray);
+   }
+}
+
+@mixin clearfix {
+  &:after {
+    content: ".";
+    display: block;
+    height: 0;
+    clear: both;
+    visibility: hidden;
+  }
+}

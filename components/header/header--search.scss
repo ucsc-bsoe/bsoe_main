@@ -1,0 +1,38 @@
+input[type="search"] {
+  width: auto;
+  margin-right: 5px;
+  padding-top: 0;
+  padding-bottom: 0;
+  display: inline;
+}
+
+div#block-searchform {
+  text-align: right;
+  position: relative;
+  right: 0;
+  min-width: 250px;
+  margin-top: 0;
+  margin-right: 0;
+  margin-bottom:0;
+  display: none;
+  @include respond-to(medium-up) {
+   display: block;
+  }
+}
+
+#ucsc-google-search-box input[type=text],
+#masquerade-block-form input[type=text] {
+  width: auto;
+  display: inline-block;
+  margin-right: 10px;
+  margin-bottom: 5px;
+}
+
+#ucsc-google-search-box .button,
+#masquerade-block-form input[type=submit] {
+  margin-left: 0;
+  margin-right: 0;
+  display: inline-block;
+  vertical-align: top;
+}
+

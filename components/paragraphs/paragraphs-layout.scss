@@ -1,0 +1,91 @@
+// All paragraphs styling.
+.paragraph {
+  clear: both;
+  @include clearfix;
+}
+
+.paragraph--type--content-section,
+.paragraph--type--_-columns,
+.paragraph--type--_-column {
+  .paragraph-sections {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    > div,
+    > a {
+      flex-basis: 100%;
+      width: 100%;
+    }
+  }
+}
+
+// 2, 3, 4, 5 column
+.field--name-field-2-column-content-section,
+.field--name-field-3-column-content-section,
+.field--name-field-4-column-content-section,
+.field--name-field-5-column-content-section {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: stretch;
+}
+
+// 2 Column
+.field--name-field-2-column-content-section > .paragraph {
+  flex-basis: 49%;
+  margin-right: 2%;
+  &:nth-child(even) {
+    margin-right: 0;
+  }
+  @include respond-to(medium-down) {
+      flex-basis: 100%;
+      margin-right: 0;
+  }
+}
+
+// 3 Column
+.field--name-field-3-column-content-section > .paragraph {
+  flex-basis: 32%;
+  margin-right: 2%;
+  @include respond-to(medium-down) {
+      flex-basis: 100%;
+      margin-right: 0;
+  }
+  &:nth-child(3n+3) {
+    margin-right: 0;
+  }
+}
+
+// 4 Column
+.field--name-field-4-column-content-section > .paragraph {
+  flex-basis: 23.5%;
+  margin-right: 2%;
+  @include respond-to(medium-down) {
+    flex-basis: 100%;
+    margin-right: 0;
+  }
+  &:nth-child(4n+4) {
+    margin-right: 0;
+  }
+}
+
+// 5 Column
+.field--name-field-5-column-content-section > .paragraph {
+  flex-basis: 18.4%;
+  margin-right: 2%;
+  @include respond-to(medium-down) {
+    flex-basis: 100%;
+    margin-right: 0;
+  }
+  &:nth-child(5n+5) {
+    margin-right: 0;
+  }
+}
+
+// Large Slider
+.paragraph--type--large-slider {
+  margin-bottom: 2em;
+}
+
+.paragraph--type--content-section > .paragraph-sections {
+  width: 100%;
+}

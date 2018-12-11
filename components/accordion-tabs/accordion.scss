@@ -1,0 +1,33 @@
+#accordion {
+  margin: 1rem 0;
+}
+
+.ui-corner-all,
+.ui-corner-top,
+.ui-corner-right,
+.ui-corner-tr,
+.ui-corner-left,
+.ui-corner-tl,
+.ui-corner-bottom,
+.ui-corner-br,
+.ui-widget-content {
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius:0;
+  border-color: var(--color-shadow-gray);
+}
+
+.ui-state-default,
+.ui-widget-content
+.ui-state-default,
+.ui-widget-header
+.ui-state-default {
+  background: var(--color-light-gray);
+  color: var(--color-text-gray);
+}
+
+.ui-widget {
+  font: inherit;
+}
+

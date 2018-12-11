@@ -1,0 +1,33 @@
+footer {
+  padding: 1rem 0 3rem;
+  background-color: var(--color-light-gray);
+  border-top: 1px solid var(--color-shadow-gray);
+}
+
+.region-footer .field--name-body {
+  display: flex;
+  flex-direction: row;
+  align-items: stretch;
+  flex-wrap: wrap;
+  .footer-left, .footer-right {
+    flex-basis: 100%;
+    width: 100%;
+    @include respond-to(medium-up) {
+      flex-basis: 50%;
+      width: 50%;
+    }
+  }
+  .footer-map {
+    flex-basis: 100%;
+    width: 100%;
+    iframe {
+      width: 100%!important;
+      max-width: 100%!important;
+      float: right;
+    }
+    @include respond-to(medium-up) {
+      flex-basis: 50%;
+      width: 50%;
+    }
+  }
+}

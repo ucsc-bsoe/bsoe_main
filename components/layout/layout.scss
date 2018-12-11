@@ -1,0 +1,119 @@
+body {
+  font-family: var(--font-sans-serif);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-stroke: 0.45px rgba(0, 0, 0, 0.1);
+}
+
+main {
+  font-weight: 100;
+}
+
+/* Add some default padding to regions. We don't add it to the layout container so we can
+ * override later if we want things full width (hint - header and footer have wrappers that
+ * can be full width. Main is included here, as it has multiple regions.
+ */
+.region-primary-menu > nav,
+.region-help,
+.region-highlighted,
+.region-footer,
+.paragraph--type--_-column > .paragraph-sections,
+.paragraph--type--_-columns > .paragraph-sections,
+.paragraph--type--page-title,
+main,
+.page-node-type-page .node__content > .field--name-body {
+  margin-right: 5%;
+  margin-left: 5%;
+}
+
+.page-node-type-page main {
+  margin-right: 0;
+  margin-left: 0;
+}
+
+header {
+  display: flex;
+  flex-wrap: wrap;
+  @include respond-to(medium-up) {
+    flex-wrap: nowrap;
+  }
+}
+
+.region-header {
+  margin-left: 5%;
+  flex-basis: 100%;
+  margin-top: .5rem;
+  width: 100%;
+  order: 2;
+  @include respond-to(medium-up) {
+    flex-basis: 80%;
+    width: auto;
+    order: 1;
+  }
+}
+
+.region-secondary-menu {
+  margin-right: 5%;
+  flex-basis: 100%;
+  width: 100%;
+  order: 1;
+  @include respond-to(medium-up) {
+    flex-basis: 20%;
+    width: auto;
+    order: 2;
+  }
+}
+
+.layout-container {
+  background: var(--color-white);
+}
+
+.region-highlighted {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+nav.tabs {
+  margin-top: 1em;
+  margin-bottom: 1em;
+}
+
+.messages {
+  margin-top: 1em;
+  margin-bottom: 1em;
+}
+
+.region-help {
+  margin-top: 3rem;
+  margin-bottom: 1rem;
+}
+
+// This is the Page Body
+
+.page-node-type-page .node__content > .field--name-body{
+  margin-top: 1em;
+  margin-bottom: 1em;
+}
+
+.page-node-type-page .block-page-title-block,
+.page-node-type-page .search-block-form {
+  margin-right: 5%;
+  margin-left: 5%;
+}
+
+.sm-simple>li:first-child>a {
+  margin-left: 0;
+}
+
+.sm-simple > li > a,
+.sm-simple > li > a.highlighted,
+.sm-simple > li > a:active,
+.sm-simple > li > a:focus,
+.sm-simple > li > a:hover {
+  padding-left: 0;
+}
+
+.layout-content {
+  padding-bottom: 2em;
+  min-height: 300px;
+}

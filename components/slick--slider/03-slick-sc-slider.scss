@@ -1,0 +1,243 @@
+.sc-slider {
+  background: var(--color-light-gray);
+}
+
+.slick-dotted.slick-slider {
+  margin-bottom: 0;
+}
+
+.slick-wrapper-helper-flex {
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  align-items: stretch;
+  @include respond-to(medium-down) {
+    flex-direction: column;
+    margin-bottom: 1rem;
+    align-items: flex-start;
+  }
+  .text-on-image {
+    position: absolute;
+    flex-basis: 70%;
+    width: 70%;
+    @include respond-to(medium-down) {
+      flex-basis: 100%;
+      width: 100%;
+    }
+  }
+  .additional-text {
+    flex-basis: 30%;
+    border-top: 1px solid var(--color-shadow-gray);
+    border-bottom: 1px solid var(--color-shadow-gray);
+    overflow: hidden;
+    @include respond-to(medium-down) {
+      flex-basis: 100%;
+      width: 100%;
+    }
+  }
+  .text-on-image,
+  .additional-text {
+    left: 0;
+    top: 0;
+    padding: 1rem;
+    font-size: 70%;
+    @include respond-to(small-up) {
+      padding: 2rem;
+      font-size: 80%;
+    }
+    @include respond-to(medium-up) {
+      height: 360px;
+      padding: 2rem;
+      font-size: 85%;
+    }
+    @include respond-to(large-up) {
+      height: 400px;
+      padding: 3rem;
+      font-size: 95%
+    }
+    @include respond-to(ex-large-up) {
+      height: 500px;
+      padding: 4rem;
+      font-size: 100%;
+    }
+  }
+  @include respond-to(medium-up) {
+    .text-on-image {
+      padding-left: 5%;
+    }
+  }
+  .additional-text {
+    padding-right: 5%;
+  }
+  .field--name-field-sc-title {
+    @extend h2;
+    color: var(--color-white);
+    text-shadow: 0 0 6px #000;
+    letter-spacing: 1px;
+    padding: 0;
+    margin: 0 0 1rem 0;
+    max-width: 100%;
+    @include respond-to(large-down) {
+      font-size: 1.5rem;
+    }
+  }
+  .field--name-field-sc-text {
+    color: var(--color-white);
+    text-shadow: 0 0 5px #000;
+    font-weight: 100;
+    letter-spacing: 2px;
+    max-width: 100%;
+    width: 100%;
+    &:child(4) {
+      width: 50%;
+    }
+    @include respond-to(medium-down) {
+      width: 100%;
+    }
+    a {
+      color: var(--color-white);
+      font-weight: 700;
+      &:hover {
+        color: var(--color-yellow);
+      }
+    }
+  }
+  .image-wrapper {
+    flex-basis: 70%;
+    align-self: stretch;
+    min-height: 500px;
+    background-size: cover;
+    background-position: center center;
+    background-color: var(--color-light-blue);
+    @include respond-to(small-up) {
+      min-height: 500px;
+    }
+    @include respond-to(medium-up) {
+      min-height: 500px;
+    }
+    @include respond-to(large-up) {
+      min-height: 400px;
+    }
+    @include respond-to(ex-large-up) {
+      min-height: 500px;
+    }
+  }
+  .field--name-field-sc-add-link,
+  .field--name-field-sc-link {
+    a {
+      @extend .button;
+      @extend .button-big;
+      height: auto;
+      white-space: pre-wrap;
+      font-size: 1rem;
+    }
+  }
+  .field--name-field-sc-add-link {
+    margin-top: 1em;
+    @include respond-to(medium-up) {
+      margin-top: 2em;
+    }
+  }
+  .field--name-field-sc-add-title {
+      @extend h2;
+    @include respond-to(large-down) {
+      font-size: 1.5rem;
+    }
+  }
+}
+
+.slick-wrapper-helper-flex.full-width-slide {
+  .text-on-image {
+    width: 100%!important;
+    height: 100%;
+    @include respond-to(medium-up) {
+      min-height: 70%;
+    }
+    @include respond-to(large-up) {
+      min-height: 50%;
+    }
+  }
+  .image-wrapper {
+    width: 100%;
+    flex-basis: 100%;
+  }
+}
+
+.slick-dots {
+  position: absolute;
+  bottom: 10px;
+  z-index: 9999;
+}
+
+.slick-arrow {
+  border-radius: 50%;
+  width: 35px;
+  height: 35px;
+  background: var(--color-light-gray)!important;
+  z-index: 3;
+  box-shadow: none;
+  border: 1px solid var(--color-shadow-gray);
+  &:hover {
+    background: var(--color-shadow-gray)!important;
+    box-shadow: none;
+    -webkit-appearance: none;
+  }
+}
+
+button.slick-arrow:hover:not(.disabled) {
+  --webkit-appearance: none;
+  box-shadow: none;
+}
+
+.slick-dots li button {
+  border: none;
+  --webkit-appearance: none;
+  box-shadow: none;
+  background: #fff;
+  border-radius: 50%;
+  width: 10px;
+  height: 10px;
+  &:before {
+    content: ' ';
+  }
+  &:hover {
+    background: var(--color-dark-gray);
+    border: none;
+    --webkit-appearance: none;
+    box-shadow: none;
+  }
+}
+
+.slick-dots li.slick-active button {
+  background: var(--color-gray);
+  &:hover {
+    background: var(--color-dark-gray);
+  }
+}
+
+.slick-next:before, [dir=rtl] .slick-prev:before,
+.slick-prev:before, [dir=rtl] .slick-next:before {
+  content: "\203a";
+  font-size: 35px;
+  width: 100%;
+  position: absolute;
+  top: -5px;
+  left: 2px;
+  font-family: "Lucida Sans Unicode", "Lucida Sans", "Lucida Grande", Arial, sans-serif;
+  opacity: 1;
+  color: var(--color-text-gray);
+}
+
+.slick-prev:before, [dir=rtl] .slick-next:before {
+  content: "\2039";
+  left: -2px;
+}
+
+.slick-prev {
+  left: 5px;
+}
+
+.slick-next {
+  right: 5px;
+}

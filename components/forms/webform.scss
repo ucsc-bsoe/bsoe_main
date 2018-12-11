@@ -1,0 +1,11 @@
+// Very weird thing happening on form.
+
+.page-node-type-webform {
+  .node__meta {
+    display: none;
+  }
+  .page-title {
+    margin-right: 0;
+    margin-left: 0;
+  }
+}

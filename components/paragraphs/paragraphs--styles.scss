@@ -1,0 +1,428 @@
+// Page Title
+.page-title {
+  margin-top: 1em;
+  margin-bottom: .25em;
+}
+
+.text--center {
+  text-align: center;
+}
+
+.paragraph--type--_-columns,
+.paragraph--type--_-column,
+.bg--gray.paragraph--type--_-columns,
+.bg--gray.paragraph--type--_-column,
+.bg--light-gray.paragraph--type--_-columns,
+.bg--light-gray.paragraph--type--_-column,
+.bg--yellow.paragraph--type--_-columns,
+.bg--yellow.paragraph--type--_-column,
+.bg--blue.paragraph--type--_-columns,
+.bg--blue.paragraph--type--_-column,
+.bg--white.paragraph--type--_-columns,
+.bg--white.paragraph--type--_-column
+{
+  margin: 4em auto;
+}
+
+.bg--gray,
+.bg--light-gray,
+.bg--yellow,
+.bg--blue,
+.bg--white {
+  padding: 2em 0 4em;
+}
+
+.bg--gray {
+  background: var(--color-gray);
+}
+
+.bg--light-gray {
+  background: var(--color-soft-gray);
+}
+
+.bg--yellow {
+  background: var(--color-yellow);
+}
+
+.bg--blue {
+  background: var(--color-primary);
+  color: var(--color-white);
+  a, a:hover, a:focus, a:active {
+    color: var(--color-white);
+  }
+}
+
+// Content Sections
+
+// Styles for all Content Sections
+
+.field--name-field-sc-title {
+  margin-top: 1rem;
+  font-size: 1.6em;
+  display: block;
+  position: relative;
+  font-weight: 300;
+  padding: .5rem 0;
+}
+
+.field--name-field-sc-text,
+.field--name-field-sc-link {
+  padding: 1rem 0;
+}
+
+.field--name-field-sc-link a:after {
+  content: " \203A\203A";
+}
+
+.field--name-field-sc-image img {
+  vertical-align: top;
+  width: 100%;
+}
+
+.field--name-field-sc-image {
+  margin: 0;
+}
+
+.field--name-field-sc-text + .field--name-field-sc-link {
+  padding-top: 0;
+}
+
+.field--name-field-sc-text p:last-child {
+  margin-bottom: 0;
+}
+
+// Plain Content Sections
+
+.content-section--plain {
+  padding-bottom: var(--component-spacing);
+}
+
+// Styles for Blue, Gray and Yellow Block and Bright Headers
+
+.content-section--gray-block,
+.content-section--yellow-block,
+.content-section--blue-block,
+.content-section--green-block,
+.content-section--orange-block,
+.content-section--bright-header--yellow,
+.content-section--bright-header--blue,
+.content-section--bright-header--green,
+.content-section--bright-header--orange {
+  margin-top: 2rem;
+  &:first-child {
+    margin-top: 0;
+  }
+  @include respond-to(medium-up) {
+    margin-top: 0;
+  }
+  font-weight: 300;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  padding-bottom: 1rem;
+  .field--name-field-sc-title,
+  .field--name-field-sc-text,
+  .field--name-field-sc-link {
+    padding: 1rem 1.5rem;
+    margin-top: 0;
+  }
+  .field--name-field-sc-image,
+  .sc--title-image {
+    order: 1;
+    align-self: flex-start;
+  }
+  .field--name-field-sc-title,
+  .sc--title-link{
+    order: 2;
+    align-self: flex-start;
+  }
+  .field--name-field-sc-text {
+    order: 3;
+    align-self: flex-start;
+  }
+  .field--name-field-sc-link {
+    order: 4;
+    align-self: flex-start;
+  }
+}
+
+// Gray Block
+.content-section--gray-block {
+  background: var(--color-light-gray);
+}
+
+// Blue Block and Blue Bright Header Title Fonts
+.content-section--blue-block,
+.content-section--bright-header--blue .field--name-field-sc-title {
+  background: var(--color-primary);
+  color: var(--color-white);
+  a,
+  a:hover,
+  a:focus,
+  a:visited {
+    color: var(--color-white);
+  }
+  a:hover,
+  a:focus {
+    color: var(--color-yellow);
+  }
+}
+
+// Yellow Block Background
+.content-section--yellow-block {
+  background: var(--color-yellow);
+}
+
+
+// Yellow Block and Yellow Bright Header Fonts
+.content-section--yellow-block,
+.content-section--bright-header--yellow {
+  color: var(--color-dark-gray);
+  a,
+  a:focus,
+  a:visited {
+    color: var(--color-dark-gray);
+  }
+  a:hover,
+  a:focus {
+    color: var(--color-primary);
+  }
+}
+
+// Bright Headers
+.content-section--bright-header--yellow {
+  background: var(--color-light-yellow);
+  .field--name-field-sc-title {
+    background: var(--color-yellow);
+  }
+}
+
+.content-section--bright-header--blue {
+  background: var(--color-extra-light-blue);
+  a:hover,
+  a:focus {
+    color: var(--color-dark-gray);
+  }
+}
+
+// Bars
+.content-section--yellow-bar,
+.content-section--blue-bar,
+.content-section--green-bar,
+.content-section--orange-bar {
+  .field--name-field-sc-title,
+  .field--name-field-sc-text,
+  .field--name-field-sc-link {
+    padding: 1rem 1.5rem;
+    margin-top: 0;
+  }
+  .field--name-field-sc-title {
+    padding-top: 0;
+  }
+  margin-bottom: 1rem;
+  position: relative;
+  padding: 0 1.5rem 0 1rem;
+  &:before {
+    content: " ";
+    height: 100%;
+    width: 20px;
+    position: absolute;
+    left: 0;
+  }
+}
+
+// Yellow Bar
+.content-section--yellow-bar:before {
+  background-color: var(--color-yellow);
+}
+
+// Blue Bar
+.content-section--blue-bar:before {
+  background-color: var(--color-primary);
+}
+
+// Orange Bar
+.content-section--orange-bar:before {
+  background-color: var(--color-orange);
+}
+
+// Green Bar
+.content-section--green-bar:before {
+  background-color: var(--color-green);
+}
+
+// Two Column Right and Left
+
+.two-column-slide--right-image {
+  .image-wrapper {
+    @include respond-to(medium-up) {
+      order: 2;
+    }
+  }
+  .additional-text {
+    @include respond-to(medium-up) {
+      order: 1;
+    }
+  }
+}
+
+.two-column-slide--right-image .slick-wrapper-helper-flex .text-on-image {
+  right: 0;
+  left: auto;
+  @include respond-to(medium-up) {
+    padding-left: 2rem;
+    padding-right: 5%;
+  }
+  @include respond-to(large-up) {
+    padding-left: 3rem;
+  }
+  @include respond-to(ex-large-up) {
+    padding-left: 4rem;
+  }
+}
+
+.two-column-slide--right-image .slick-wrapper-helper-flex .additional-text {
+  @include respond-to(medium-up) {
+    padding-right: 2rem;
+    padding-left: 5%;
+  }
+  @include respond-to(large-up) {
+    padding-right: 3rem;
+  }
+  @include respond-to(ex-large-up) {
+    padding-right: 4rem;
+  }
+}
+
+// Light Backgrounds
+
+.transparent-image--blue .text-on-image {
+  background: -moz-linear-gradient(top, rgba(12,94,177,1) 0%, rgba(125,185,232,0) 100%); /* FF3.6-15 */
+  background: -webkit-linear-gradient(top, rgba(12,94,177,1) 0%,rgba(125,185,232,0) 100%); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to bottom, rgba(12,94,177,1) 0%,rgba(125,185,232,0) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#0c5eb1', endColorstr='#007db9e8',GradientType=0 ); /* IE6-9 */
+}
+
+.transparent-image--black .text-on-image {
+  background: -moz-linear-gradient(top, rgba(0, 3, 51, 1) 0%, rgba(125, 185, 232, 0) 100%); /* FF3.6-15 */
+  background: -webkit-linear-gradient(top, rgba(0, 3, 51, 1) 0%, rgba(125, 185, 232, 0) 100%); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to bottom, rgba(0, 3, 51, 1) 0%, rgba(125, 185, 232, 0) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#000333', endColorstr='#007db9e8', GradientType=0); /* IE6-9 */
+}
+
+.transparent-image--black-left .text-on-image {
+  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#000333+0,7db9e8+100&1+0,0+100 */
+  background: -moz-linear-gradient(-45deg, rgba(0,3,51,1) 0%, rgba(125,185,232,0) 100%); /* FF3.6-15 */
+  background: -webkit-linear-gradient(-45deg, rgba(0,3,51,1) 0%,rgba(125,185,232,0) 100%); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(135deg, rgba(0,3,51,1) 0%,rgba(125,185,232,0) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#000333', endColorstr='#007db9e8',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+}
+
+.transparent-image--blue-left .text-on-image {
+  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#0c5eb1+0,7db9e8+100&1+0,0+60 */
+  background: -moz-linear-gradient(-45deg, rgba(12,94,177,1) 0%, rgba(80,149,210,0) 60%, rgba(125,185,232,0) 100%); /* FF3.6-15 */
+  background: -webkit-linear-gradient(-45deg, rgba(12,94,177,1) 0%,rgba(80,149,210,0) 60%,rgba(125,185,232,0) 100%); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(135deg, rgba(12,94,177,1) 0%,rgba(80,149,210,0) 60%,rgba(125,185,232,0) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#0c5eb1', endColorstr='#007db9e8',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+}
+
+.transparent-image--black-right .text-on-image {
+  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#7db9e8+0,000333+100&0+0,1+100 */
+  background: -moz-linear-gradient(left, rgba(125,185,232,0) 0%, rgba(0,3,51,1) 100%); /* FF3.6-15 */
+  background: -webkit-linear-gradient(left, rgba(125,185,232,0) 0%,rgba(0,3,51,1) 100%); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to right, rgba(125,185,232,0) 0%,rgba(0,3,51,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#007db9e8', endColorstr='#000333',GradientType=1 ); /* IE6-9 */
+}
+
+.transparent-image--blue-right .text-on-image {
+  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#7db9e8+0,0c5eb1+100&0+40,1+100 */
+  background: -moz-linear-gradient(left, rgba(125,185,232,0) 0%, rgba(80,149,210,0) 40%, rgba(12,94,177,1) 100%); /* FF3.6-15 */
+  background: -webkit-linear-gradient(left, rgba(125,185,232,0) 0%,rgba(80,149,210,0) 40%,rgba(12,94,177,1) 100%); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to right, rgba(125,185,232,0) 0%,rgba(80,149,210,0) 40%,rgba(12,94,177,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#007db9e8', endColorstr='#0c5eb1',GradientType=1 ); /* IE6-9 */
+}
+
+// Title on Image
+.paragraph--type--_-columns .paragraph--type--content-section[class^="content-section--title-on-image"] {
+  .paragraph-sections {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    .field--name-field-sc-title {
+      margin-top: 0;
+      padding: 1em;
+      text-align: center;
+      color: var(--color-white);
+      text-shadow: 0 0 2px var(--color-primary), 0 0 5px var(--color-primary), 0 0 4px var(--color-dark-gray);
+      font-size: 1.6em;
+      @include respond-to(medium-up) {
+        font-size: 1.2em;
+      }
+      @include respond-to(large-up) {
+        font-size: 1.6em;
+      }
+    }
+    > div.field--name-field-sc-title,
+    > a.sc--title-link {
+      position: absolute;
+      top: 0;
+      left: 0;
+      z-index: 3;
+    }
+    > div.field--name-field-sc-image,
+    > a.sc--title-image {
+
+      position: relative;
+      &:before {
+        content: " ";
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        z-index: 2;
+        background: -moz-linear-gradient(top, rgba(12,94,177,0.5) 0%, rgba(12,94,177,0.5) 100%);
+        background: -webkit-linear-gradient(top, rgba(12,94,177,0.5) 0%,rgba(12,94,177,0.5) 100%);
+        background: linear-gradient(to bottom, rgba(12,94,177,0.5) 0%,rgba(12,94,177,0.5) 100%);
+        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#660c5eb1', endColorstr='#660c5eb1',GradientType=0 );
+      }
+    }
+  }
+}
+
+// Yellow Background
+.paragraph--type--_-columns .paragraph--type--content-section.content-section--title-on-image--yellow {
+  .paragraph-sections {
+    .field--name-field-sc-title {
+      text-shadow: 0 0 2px var(--color-yellow), 0 0 5px var(--color-yellow), 0 0 4px var(--color-orange);
+    }
+    > div.field--name-field-sc-image,
+    > a.sc--title-image {
+      &:before {
+        background: -moz-linear-gradient(top, rgba(247,218,80,0.4) 0%, rgba(247,218,80,0.4) 100%);
+        background: -webkit-linear-gradient(top, rgba(247,218,80,0.4) 0%,rgba(247,218,80,0.4) 100%);
+        background: linear-gradient(to bottom, rgba(247,218,80,0.4) 0%,rgba(247,218,80,0.4) 100%);
+        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#66f7da50', endColorstr='#66f7da50',GradientType=0 );      }
+    }
+  }
+}
+
+// Black Background
+.paragraph--type--_-columns .paragraph--type--content-section.content-section--title-on-image--gray {
+  .paragraph-sections {
+    .field--name-field-sc-title {
+      text-shadow: 0 0 2px var(--color-dark-gray), 0 0 5px var(--color-dark-gray), 0 0 4px var(--color-black);
+    }
+    > div.field--name-field-sc-image,
+    > a.sc--title-image {
+      &:before {
+        background: -moz-linear-gradient(top, rgba(55,55,55,0.4) 0%, rgba(55,55,55,0.4) 100%);
+        background: -webkit-linear-gradient(top, rgba(55,55,55,0.4) 0%,rgba(55,55,55,0.4) 100%);
+        background: linear-gradient(to bottom, rgba(55,55,55,0.4) 0%,rgba(55,55,55,0.4) 100%);
+        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#000000', endColorstr='#000000',GradientType=0 );      }
+    }
+  }
+}
+

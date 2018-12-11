@@ -1,0 +1,40 @@
+.field--name-field-sc-video {
+  position: relative;
+  height: 100%;
+  width: 100%;
+  margin-bottom: 2em;
+  iframe {
+    width: 250px;
+    height: 141px;
+    max-width: 100%;
+    @include respond-to(small-up) {
+      width: 300px;
+      height: 169px;
+    }
+    @include respond-to(medium-up) {
+      width: 600px;
+      height: 337px;
+    }
+    @include respond-to(large-up) {
+      width: 854px;
+      height: 480px;
+    }
+  }
+}
+
+.paragraph--type--_-column .paragraph-sections>div.field--name-field-sc-video,
+.paragraph--type--_-column .paragraph--type--video .paragraph-sections>div.field--name-field-sc-text {
+  flex-basis: 49%;
+  margin-right: 2%;
+  max-width: 49%;
+  @include respond-to(medium-down) {
+    flex-basis: 100%;
+    max-width: 100%;
+    margin-right: 0;
+  }
+}
+
+.paragraph--type--_-column .paragraph--type--video .paragraph-sections>div.field--name-field-sc-text {
+  margin-right: 0;
+  padding-top: 0;
+}
