@@ -1,8 +1,8 @@
 {
-  "name": "drupal/bsoe_plain",
+  "name": "drupal/bsoe_main",
   "description": "Baskin School of Engineering plain theme.",
   "type": "drupal-custom-theme",
-  "homepage": "https://github.com/ucsc-bsoe/bsoe_plain",
+  "homepage": "https://github.com/ucsc-bsoe/bsoe_main",
   "authors": [
     {
       "name": "Kristin Bradham",

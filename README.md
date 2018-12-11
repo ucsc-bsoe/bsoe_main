@@ -1,4 +1,4 @@
-# BSOE Plain
+# BSOE Main
 This is the base theme for BSOE sites
 
 ## This site is organized into components

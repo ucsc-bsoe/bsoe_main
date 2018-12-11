@@ -1,4 +1,4 @@
-name: BSOE Plain
+name: BSOE Main
 type: theme
 description: 'A basic base for the BSOE themes.'
 package: 'Baskin School of Engineering'
@@ -6,8 +6,8 @@ core: 8.x
 version: 1.0
 screenshot: logo.svg
 libraries:
-  - 'bsoe_plain/global-styling'
-  - 'bsoe_plain/fonts'
+  - 'bsoe_main/global-styling'
+  - 'bsoe_main/fonts'
 base theme: classy
 regions:
   secondary_menu: 'Secondary Menu'
