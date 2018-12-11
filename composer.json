@@ -1,0 +1,15 @@
+{
+  "name": "drupal/bsoe_plain",
+  "description": "Baskin School of Engineering plain theme.",
+  "type": "drupal-custom-theme",
+  "homepage": "https://github.com/ucsc-bsoe/bsoe_plain",
+  "authors": [
+    {
+      "name": "Kristin Bradham",
+      "homepage": "https://www.drupal.org/u/kristindev",
+      "role": "Maintainer"
+    }
+  ],
+  "license": "GPL-2.0-or-later",
+  "minimum-stability": "dev"
+}

@@ -1,0 +1,16 @@
+global-styling:
+  version: 1.x
+  css:
+    theme:
+      min/styles.css: {}
+  js:
+    min/script.js: {}
+  dependencies:
+    - core/jquery
+    - core/jquery.ui.tabs
+    - core/jquery.ui.accordion
+
+fonts:
+  css:
+    theme:
+      '//fonts.googleapis.com/css?family=Roboto|Open+Sans:100,400,700': { type: external, minified: true }

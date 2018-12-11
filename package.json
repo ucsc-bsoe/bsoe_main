@@ -1,0 +1,29 @@
+{
+  "name": "bsoe_plain",
+  "version": "1.0.0",
+  "description": "Gulp tasks for BSOE Plain",
+  "license": "GPL-3.0",
+  "repository": {},
+  "main": "gulpfile.js",
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-concat": "^2.6.1",
+    "gulp-cssmin": "^0.2.0",
+    "gulp-eslint": "^4.0.0",
+    "gulp-plumber": "^1.1.0",
+    "gulp-sass": "^3.1.0",
+    "gulp-sass-lint": "^1.3.2",
+    "gulp-sourcemaps": "^2.6.0",
+    "gulp-strip-css-comments": "^1.2.0",
+    "gulp-uglify": "^3.0.0",
+    "gulp-watch": "^4.3.11"
+  },
+  "dependencies": {
+    "gulp-cli": "^2.0.1",
+    "smartmenus": "^1.0.1"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": ""
+}
