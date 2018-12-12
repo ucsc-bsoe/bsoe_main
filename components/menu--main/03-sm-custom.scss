@@ -41,11 +41,11 @@
 .sm-simple > li > a:active,
 .sm-simple > li > a:focus,
 .sm-simple > li > a:hover {
-  color: white;
   background: transparent;
   font-family: var(--font-titles);
   letter-spacing: .5px;
   font-weight: 700;
+  text-transform: uppercase;
 }
 
 .sm-simple > li > a.highlighted,
