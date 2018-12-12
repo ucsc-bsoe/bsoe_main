@@ -18,7 +18,7 @@ div#block-searchform {
   @include respond-to(medium-up) {
     display: block;
   }
-  input.button {
+  .button {
     background-color: var(--color-light-gray);
   }
 }
