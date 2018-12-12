@@ -14,11 +14,9 @@
  */
 #}
 {% block content %}
-    {% if site_logo %}
         <a href="https://www.soe.ucsc.edu" title="{{ 'Home'|t }}" rel="home" class="site-logo">
-            <img src="{{ site_logo }}" alt="{{ 'Home'|t }}"/>
+            <img src="{{ logo_path }}" alt="{{ 'Home'|t }}"/>
         </a>
-    {% endif %}
 
     <div class="site-branding">
         {% if site_name %}
