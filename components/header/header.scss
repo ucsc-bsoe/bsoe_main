@@ -16,7 +16,7 @@ header {
 .site-name-menu {
   font-size: 200%;
   line-height: 1.2em;
-  font-weight: 700;
+  font-weight: 600;
   width: calc(100% - 290px);
   display: inline-block;
   a {
@@ -35,6 +35,7 @@ header {
   max-width: var(--page-max-width);
   margin: auto;
   display:flex;
+  align-items: flex-end;
   @include respond-to(medium-down) {
     display: block;
   }

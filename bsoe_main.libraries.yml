@@ -13,4 +13,4 @@ global-styling:
 fonts:
   css:
     theme:
-      '//fonts.googleapis.com/css?family=Oswald:700|Open+Sans:100,400,700': { type: external, minified: true }
+      '//fonts.googleapis.com/css?family=Oswald:700|Open+Sans:100,400,600': { type: external, minified: true }
