@@ -69,11 +69,11 @@
   /* Components */
   --component-bg-color: var(--color-component-bg-color);
   --component-border-color: var(--color-component-border);
-  --component-border-radius: .25rem;
+  --component-border-radius: 0;
   --component-border-width: 1px;
-  --component-spacing: 1rem;
-  --component-spacing-big: 2rem;
-  --component-spacing-small: .5rem;
+  --component-spacing: .5rem;
+  --component-spacing-big: 1rem;
+  --component-spacing-small: .25rem;
 
   /* Content */
   --body-bg-color: var(--color-light-gray);
