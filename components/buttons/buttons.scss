@@ -9,14 +9,14 @@ button,
   text-decoration: none;
   color: var(--button-color);
   background-color: var(--button-bg-color-primary);
-  border-radius: var(--button-border-radius);
+  //border-radius: var(--button-border-radius);
   border: none;
   height: var(--input-height);
   line-height: 1;
   user-select: none;
   vertical-align: middle;
   white-space: nowrap;
-  padding: calc(var(--component-spacing) * .5) calc(var(--component-spacing) * .75);
+  padding: calc(var(--component-spacing) * .25) calc(var(--component-spacing) * .5);
   box-shadow: var(--button-box-shadow);
   cursor: pointer;
   display: inline-block;
@@ -26,7 +26,7 @@ button,
 .button-small {
   font-size: calc(var(--button-font-size) * .8);
   height: var(--input-height-small);
-  padding: calc(var(--component-spacing) * .25) calc(var(--component-spacing) * .5);
+  padding: calc(var(--component-spacing) * .125) calc(var(--component-spacing) * .25);
 }
 
 .button-big {

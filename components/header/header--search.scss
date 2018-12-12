@@ -18,6 +18,9 @@ div#block-searchform {
   @include respond-to(medium-up) {
     display: block;
   }
+  input.button {
+    background-color: var(--color-light-gray);
+  }
 }
 
 #ucsc-google-search-box input[type=text],
