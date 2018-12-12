@@ -34,9 +34,9 @@ header {
 .site-branding {
   max-width: var(--page-max-width);
   margin: auto;
-  display:flex;
+  display: flex;
   align-items: flex-end;
-  @include respond-to(medium-down) {
+  @include respond-to(small-down) {
     display: block;
   }
 }
