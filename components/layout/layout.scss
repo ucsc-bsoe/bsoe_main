@@ -24,11 +24,17 @@ main,
   margin-right: auto;
   margin-left: auto;
   max-width: var(--page-max-width);
+  @include respond-to(medium-down) {
+    padding: 0 30px;
+  }
 }
 
 .page-node-type-page main {
   margin-right: auto;
   margin-left: auto;
+  @include respond-to(medium-down) {
+    padding: 0 30px;
+  }
 }
 
 header {
@@ -37,21 +43,33 @@ header {
 .region-header {
   margin: 2em auto 0 auto;
   width: 100%;
+  @include respond-to(medium-down) {
+    padding: 0 30px;
+  }
 }
 
 .region-secondary-menu {
   margin: 0 auto;
   width: 100%;
   max-width: var(--page-max-width);
+  @include respond-to(medium-down) {
+    padding: 0 30px;
+  }
 }
 
 .layout-container {
   background: var(--color-white);
+  @include respond-to(medium-down) {
+    padding: 0 30px;
+  }
 }
 
 .region-highlighted {
   margin-top: 0;
   margin-bottom: 0;
+  @include respond-to(medium-down) {
+    padding: 0 30px;
+  }
 }
 
 nav.tabs {
