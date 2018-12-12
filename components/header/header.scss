@@ -1,13 +1,9 @@
 
 .site-logo {
-  margin-top: .5rem;
-  margin-right: .5rem;
+  margin-right: 30px;
   max-width: 250px;
   width: 100%;
-  @include respond-to(small-up) {
-    margin-right: 0;
-    width: auto;
-  }
+  display: inline-block;
 }
 
 header {
@@ -18,6 +14,7 @@ header {
   font-size: 200%;
   line-height: 1.2em;
   font-weight: 700;
+  width: calc(100% - 290px);
   a {
     text-decoration: none;
     &:hover {
