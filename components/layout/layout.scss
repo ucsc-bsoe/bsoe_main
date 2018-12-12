@@ -24,7 +24,7 @@ main,
 .page-node-type-page .node__content > .field--name-body {
   margin-right: 5%;
   margin-left: 5%;
-  max-width: 1500px;
+  max-width: var(--page-max-width);
 }
 
 .page-node-type-page main {
@@ -43,7 +43,7 @@ header {
 .region-secondary-menu {
   margin: 0 auto;
   width: 100%;
-  max-width: 1500px;
+  max-width: var(--page-max-width);
 }
 
 .layout-container {
