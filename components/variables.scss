@@ -6,14 +6,14 @@
   --font-serif: serif;
   --font-system: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
   --font-monospace: Menlo, Consolas, "DejaVu Sans Mono", monospace;
-  --font-titles: "Oswald","Open Sans", sans-serif;
+  --font-titles: "Oswald", "Open Sans", sans-serif;
 
   /* Colors */
-  --color-primary: #0c5eb1;
+  /*--color-primary: #003c6c;
   --color-light-blue: #8bc2fb;
   --color-extra-light-blue: #BAE0FB;
   --color-white: #ffffff;
-  --color-blue: #0c5eb1;
+  --color-blue: #003c6c;
   --color-green: #1cd8a1;
   --color-dark-green: #008c69;
   --color-yellow: #f7da50;
@@ -28,7 +28,31 @@
   --color-text-gray: #666;
   --color-shadow-gray: #ccc;
   --color-light-border: #e2e2e2;
+  --color-soft-gray: #eeeeee;*/
+
+  --color-primary: #003c6c;
+  --color-light-blue: #006aad;
+  --color-extra-light-blue: #13a5dc;
+  --color-white: #ffffff;
+  --color-blue: #003c6c;
+  --color-green: #93c02d;
+  --color-dark-green: #007988;
+  --color-yellow: #f8b307;
+  --color-light-yellow: #fdc700;
+  --color-orange: #f29813;
+  --color-red: #ff4136;
+  --color-rubine: #da216d;
+  --color-light-orange: #f8b307;
+  --color-black: #000;
+  --color-dark-gray: #333;
+  --color-gray: #aaa;
+  --color-light-gray: #f5f5f5;
+  --color-text-gray: #666;
+  --color-shadow-gray: #ccc;
+  --color-light-border: #e2e2e2;
   --color-soft-gray: #eeeeee;
+  --color-component-bg-color: #f2f2f2;
+  --color-component-border: #ddd;
 
   /* States */
   --state-success: var(--color-dark-green);
@@ -42,8 +66,8 @@
   --page-padding: 1rem;
 
   /* Components */
-  --component-bg-color: #f2f2f2;
-  --component-border-color: #ddd;
+  --component-bg-color: var(--color-component-bg-color);
+  --component-border-color: var(--color-component-border);
   --component-border-radius: .25rem;
   --component-border-width: 1px;
   --component-spacing: 1rem;
@@ -130,7 +154,7 @@
   --badge-font-size: .8em; /* ems for relative sizing */
   --badge-font-weight: var(--font-weight-bold);
   --badge-color: var(--color-white);
-  --badge-border-radius: 1em;  /* ems for relative sizing */
+  --badge-border-radius: 1em; /* ems for relative sizing */
   --badge-bg-color-primary: var(--color-primary);
   --badge-bg-color-success: var(--state-success);
   --badge-bg-color-info: var(--state-info);

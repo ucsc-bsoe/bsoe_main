@@ -300,7 +300,7 @@
   background: -moz-linear-gradient(top, rgba(12,94,177,1) 0%, rgba(125,185,232,0) 100%); /* FF3.6-15 */
   background: -webkit-linear-gradient(top, rgba(12,94,177,1) 0%,rgba(125,185,232,0) 100%); /* Chrome10-25,Safari5.1-6 */
   background: linear-gradient(to bottom, rgba(12,94,177,1) 0%,rgba(125,185,232,0) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#0c5eb1', endColorstr='#007db9e8',GradientType=0 ); /* IE6-9 */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#003c6c', endColorstr='#007db9e8',GradientType=0 ); /* IE6-9 */
 }
 
 .transparent-image--black .text-on-image {
@@ -319,11 +319,11 @@
 }
 
 .transparent-image--blue-left .text-on-image {
-  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#0c5eb1+0,7db9e8+100&1+0,0+60 */
+  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#003c6c+0,7db9e8+100&1+0,0+60 */
   background: -moz-linear-gradient(-45deg, rgba(12,94,177,1) 0%, rgba(80,149,210,0) 60%, rgba(125,185,232,0) 100%); /* FF3.6-15 */
   background: -webkit-linear-gradient(-45deg, rgba(12,94,177,1) 0%,rgba(80,149,210,0) 60%,rgba(125,185,232,0) 100%); /* Chrome10-25,Safari5.1-6 */
   background: linear-gradient(135deg, rgba(12,94,177,1) 0%,rgba(80,149,210,0) 60%,rgba(125,185,232,0) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#0c5eb1', endColorstr='#007db9e8',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#003c6c', endColorstr='#007db9e8',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
 }
 
 .transparent-image--black-right .text-on-image {
@@ -335,11 +335,11 @@
 }
 
 .transparent-image--blue-right .text-on-image {
-  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#7db9e8+0,0c5eb1+100&0+40,1+100 */
+  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#7db9e8+0,003c6c+100&0+40,1+100 */
   background: -moz-linear-gradient(left, rgba(125,185,232,0) 0%, rgba(80,149,210,0) 40%, rgba(12,94,177,1) 100%); /* FF3.6-15 */
   background: -webkit-linear-gradient(left, rgba(125,185,232,0) 0%,rgba(80,149,210,0) 40%,rgba(12,94,177,1) 100%); /* Chrome10-25,Safari5.1-6 */
   background: linear-gradient(to right, rgba(125,185,232,0) 0%,rgba(80,149,210,0) 40%,rgba(12,94,177,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#007db9e8', endColorstr='#0c5eb1',GradientType=1 ); /* IE6-9 */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#007db9e8', endColorstr='#003c6c',GradientType=1 ); /* IE6-9 */
 }
 
 // Title on Image
@@ -386,7 +386,7 @@
         background: -moz-linear-gradient(top, rgba(12,94,177,0.5) 0%, rgba(12,94,177,0.5) 100%);
         background: -webkit-linear-gradient(top, rgba(12,94,177,0.5) 0%,rgba(12,94,177,0.5) 100%);
         background: linear-gradient(to bottom, rgba(12,94,177,0.5) 0%,rgba(12,94,177,0.5) 100%);
-        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#660c5eb1', endColorstr='#660c5eb1',GradientType=0 );
+        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#66003c6c', endColorstr='#66003c6c',GradientType=0 );
       }
     }
   }
