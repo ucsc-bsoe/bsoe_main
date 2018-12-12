@@ -23,6 +23,7 @@
 .sm-simple a {
   background: white;
   color: var(--color-light-blue);
+  padding-bottom: 0;
 }
 
 .sm-simple a:hover,
@@ -30,6 +31,7 @@
 .sm-simple a:active,
 .sm-simple a.highlighted {
   background: var(--color-yellow);
+  padding-bottom: 0;
 }
 
 .sm-simple > li > a,
