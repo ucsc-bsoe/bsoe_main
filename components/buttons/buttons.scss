@@ -16,7 +16,7 @@ button,
   user-select: none;
   vertical-align: middle;
   white-space: nowrap;
-  padding: calc(var(--component-spacing) * .25) calc(var(--component-spacing) * .5);
+  padding: calc(var(--component-spacing) * .5) calc(var(--component-spacing) * 1);
   box-shadow: var(--button-box-shadow);
   cursor: pointer;
   display: inline-block;
@@ -26,13 +26,13 @@ button,
 .button-small {
   font-size: calc(var(--button-font-size) * .8);
   height: var(--input-height-small);
-  padding: calc(var(--component-spacing) * .125) calc(var(--component-spacing) * .25);
+  padding: calc(var(--component-spacing) * .25) calc(var(--component-spacing) * .5);
 }
 
 .button-big {
   font-size: calc(var(--button-font-size) * 1.2);
   height: var(--input-height-big);
-  padding: calc(var(--component-spacing) * .75) calc(var(--component-spacing) * 1);
+  padding: calc(var(--component-spacing) * 1) calc(var(--component-spacing) * 1.5);
 }
 
 .button-block {
