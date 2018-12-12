@@ -45,11 +45,6 @@ header {
   margin-top: .5rem;
   width: 100%;
   order: 2;
-  @include respond-to(medium-up) {
-    flex-basis: 80%;
-    width: auto;
-    order: 1;
-  }
 }
 
 .region-secondary-menu {
@@ -57,11 +52,6 @@ header {
   flex-basis: 100%;
   width: 100%;
   order: 1;
-  @include respond-to(medium-up) {
-    flex-basis: 20%;
-    width: auto;
-    order: 2;
-  }
 }
 
 .layout-container {
