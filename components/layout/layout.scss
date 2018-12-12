@@ -24,6 +24,7 @@ main,
 .page-node-type-page .node__content > .field--name-body {
   margin-right: 5%;
   margin-left: 5%;
+  max-width: 1500px;
 }
 
 .page-node-type-page main {
@@ -32,16 +33,10 @@ main,
 }
 
 header {
-  display: flex;
-  flex-wrap: wrap;
-  @include respond-to(medium-up) {
-    flex-wrap: nowrap;
-  }
 }
 
 .region-header {
   margin-left: 5%;
-  flex-basis: 100%;
   margin-top: .5rem;
   width: 100%;
   order: 2;
@@ -49,7 +44,6 @@ header {
 
 .region-secondary-menu {
   margin-right: 5%;
-  flex-basis: 100%;
   width: 100%;
   order: 1;
 }
