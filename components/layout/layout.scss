@@ -21,14 +21,14 @@ main {
 .paragraph--type--page-title,
 main,
 .page-node-type-page .node__content > .field--name-body {
-  margin-right: 5%;
-  margin-left: 5%;
+  margin-right: auto;
+  margin-left: auto;
   max-width: var(--page-max-width);
 }
 
 .page-node-type-page main {
-  margin-right: 0;
-  margin-left: 0;
+  margin-right: auto;
+  margin-left: auto;
 }
 
 header {
