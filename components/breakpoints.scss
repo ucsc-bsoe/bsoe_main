@@ -5,54 +5,39 @@
     @media (min-width: 300px) {
       @content;
     }
-  }
-
-  @else if $breakpoint == "small-up" {
+  } @else if $breakpoint == "small-up" {
     @media (min-width: 600px) {
       @content;
     }
-  }
-
-  @else if $breakpoint == "medium-up" {
+  } @else if $breakpoint == "medium-up" {
     @media (min-width: 900px) {
       @content;
     }
-  }
-
-  @else if $breakpoint == "large-up" {
+  } @else if $breakpoint == "large-up" {
     @media (min-width: 1200px) {
       @content;
     }
-  }
-  @else if $breakpoint == "ex-large-up" {
+  } @else if $breakpoint == "ex-large-up" {
     @media (min-width: 1600px) {
       @content;
     }
-  }
-  @else if $breakpoint == "ex-small-down" {
+  } @else if $breakpoint == "ex-small-down" {
     @media (max-width: 299px) {
       @content;
     }
-  }
-
-  @else if $breakpoint == "small-down" {
+  } @else if $breakpoint == "small-down" {
     @media (max-width: 599px) {
       @content;
     }
-  }
-
-  @else if $breakpoint == "medium-down" {
+  } @else if $breakpoint == "medium-down" {
     @media (max-width: 899px) {
       @content;
     }
-  }
-
-  @else if $breakpoint == "large-down" {
+  } @else if $breakpoint == "large-down" {
     @media (max-width: 1199px) {
       @content;
     }
-  }
-  @else if $breakpoint == "ex-large-down" {
+  } @else if $breakpoint == "ex-large-down" {
     @media (max-width: 1599px) {
       @content;
     }

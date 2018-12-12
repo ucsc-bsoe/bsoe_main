@@ -36,7 +36,7 @@ input[type="url"],
 input[type="week"],
 select,
 textarea {
-  width: calc( 100% - var(--component-spacing));
+  width: calc(100% - var(--component-spacing));
   font-family: var(--input-font-family);
   font-size: var(--input-font-size);
   font-weight: var(--input-font-weight);
@@ -100,7 +100,7 @@ input[type="color"] {
 }
 
 input[type="color"]::-webkit-color-swatch-wrapper {
-	padding: 0;
+  padding: 0;
 }
 
 input[type="color"]::-webkit-color-swatch {

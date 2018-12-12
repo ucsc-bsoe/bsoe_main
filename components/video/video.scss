@@ -22,8 +22,8 @@
   }
 }
 
-.paragraph--type--_-column .paragraph-sections>div.field--name-field-sc-video,
-.paragraph--type--_-column .paragraph--type--video .paragraph-sections>div.field--name-field-sc-text {
+.paragraph--type--_-column .paragraph-sections > div.field--name-field-sc-video,
+.paragraph--type--_-column .paragraph--type--video .paragraph-sections > div.field--name-field-sc-text {
   flex-basis: 49%;
   margin-right: 2%;
   max-width: 49%;
@@ -34,7 +34,7 @@
   }
 }
 
-.paragraph--type--_-column .paragraph--type--video .paragraph-sections>div.field--name-field-sc-text {
+.paragraph--type--_-column .paragraph--type--video .paragraph-sections > div.field--name-field-sc-text {
   margin-right: 0;
   padding-top: 0;
 }

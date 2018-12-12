@@ -89,12 +89,29 @@ h6 {
   margin-bottom: var(--headings-margin-bottom);
 }
 
-h1 { font-size: var(--headings-font-size-h1); }
-h2 { font-size: var(--headings-font-size-h2); }
-h3 { font-size: var(--headings-font-size-h3); }
-h4 { font-size: var(--headings-font-size-h4); }
-h5 { font-size: var(--headings-font-size-h5); }
-h6 { font-size: var(--headings-font-size-h6); }
+h1 {
+  font-size: var(--headings-font-size-h1);
+}
+
+h2 {
+  font-size: var(--headings-font-size-h2);
+}
+
+h3 {
+  font-size: var(--headings-font-size-h3);
+}
+
+h4 {
+  font-size: var(--headings-font-size-h4);
+}
+
+h5 {
+  font-size: var(--headings-font-size-h5);
+}
+
+h6 {
+  font-size: var(--headings-font-size-h6);
+}
 
 hr {
   border: none;
@@ -183,10 +200,21 @@ ul ul {
 * Placeholders
 ***************************************************************************************************/
 
-::-webkit-input-placeholder { color: var(--placeholder-color); }
-::-moz-placeholder { color: var(--placeholder-color); }
-:-ms-input-placeholder { color: var(--placeholder-color); }
-:-moz-placeholder { color: var(--placeholder-color); }
+::-webkit-input-placeholder {
+  color: var(--placeholder-color);
+}
+
+::-moz-placeholder {
+  color: var(--placeholder-color);
+}
+
+:-ms-input-placeholder {
+  color: var(--placeholder-color);
+}
+
+:-moz-placeholder {
+  color: var(--placeholder-color);
+}
 
 /***************************************************************************************************
 * Selections
@@ -203,7 +231,6 @@ ul ul {
   color: var(--selection-color);
   text-shadow: none !important;
 }
-
 
 /***************************************************************************************************
 * Preview section
@@ -222,7 +249,7 @@ ul ul {
   width: 70%;
   background: #fff;
   z-index: 1000;
-  box-shadow: 0 0 5px 5px rgba(0,0,0,0.5);
+  box-shadow: 0 0 5px 5px rgba(0, 0, 0, 0.5);
   border: 5px solid lightgrey;
   padding: 20px;
 }

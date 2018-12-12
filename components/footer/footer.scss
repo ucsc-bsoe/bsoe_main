@@ -21,8 +21,8 @@ footer {
     flex-basis: 100%;
     width: 100%;
     iframe {
-      width: 100%!important;
-      max-width: 100%!important;
+      width: 100% !important;
+      max-width: 100% !important;
       float: right;
     }
     @include respond-to(medium-up) {

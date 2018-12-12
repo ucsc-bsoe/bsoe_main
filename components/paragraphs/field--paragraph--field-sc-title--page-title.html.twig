@@ -37,25 +37,21 @@
  * @see template_preprocess_field()
  */
 #}
-{%
-  set classes = [
-    'field',
-    'field--name-' ~ field_name|clean_class,
-    'field--type-' ~ field_type|clean_class,
-    'field--label-' ~ label_display,
-  ]
-%}
-{%
-  set title_classes = [
-    'field__label',
-    label_display == 'visually_hidden' ? 'visually-hidden',
-  ]
-%}
+{% set classes = [
+'field',
+'field--name-' ~ field_name|clean_class,
+'field--type-' ~ field_type|clean_class,
+'field--label-' ~ label_display,
+] %}
+{% set title_classes = [
+'field__label',
+label_display == 'visually_hidden' ? 'visually-hidden',
+] %}
 
 
 
 {% for item in items %}
-  <h1{{ item.attributes.addClass('page-title') }}>{{ item.content }}</h1>
+    <h1{{ item.attributes.addClass('page-title') }}>{{ item.content }}</h1>
 {% endfor %}
 
 

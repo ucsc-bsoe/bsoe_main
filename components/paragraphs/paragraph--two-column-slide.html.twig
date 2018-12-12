@@ -38,23 +38,22 @@
  * @ingroup themeable
  */
 #}
-{%
-  set classes = [
-    'slick-wrapper-helper',
-  ]
-%}
+{% set classes = [
+'slick-wrapper-helper',
+] %}
 
 <div{{ attributes.addClass(classes) }}>
     <div class="slick-wrapper-helper-flex">
-    {% block paragraph %}
-        {% block content %}
-            <div class="hidden">{{ content }}</div>
-            <div class="image-wrapper" style="background-image: url('{{ file_url(content.field_sc_image['#items'].entity.uri.value) }}')">
-                {{ content.group_text_on_image }}
-            </div>
-            {{ content.group_add_text }}
-        {% endblock %}
-    {% endblock paragraph %}
+        {% block paragraph %}
+            {% block content %}
+                <div class="hidden">{{ content }}</div>
+                <div class="image-wrapper"
+                     style="background-image: url('{{ file_url(content.field_sc_image['#items'].entity.uri.value) }}')">
+                    {{ content.group_text_on_image }}
+                </div>
+                {{ content.group_add_text }}
+            {% endblock %}
+        {% endblock paragraph %}
     </div>
 </div>
 

@@ -54,16 +54,14 @@ header {
 .site-name {
   font-size: 200%;
   line-height: 1.2em;
-  font-family: var(--font-titles);
-  margin-top: 4px;
   a {
     text-decoration: none;
     &:hover {
-      color: var(--color-orange);
+      color: var(--color-dark-gray);
     }
   }
 }
 
-.menu--account { 
+.menu--account {
   margin-bottom: 0;
 }

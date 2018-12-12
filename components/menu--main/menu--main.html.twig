@@ -27,13 +27,13 @@
 {{ menus.menu_links(items, attributes, 0) }}
 
 {% macro menu_links(items, attributes, menu_level) %}
-  {% import _self as menus %}
-  {% if items %}
-    {% if menu_level == 0 %}
-<nav id="main-nav" role="navigation">
-<ul id="main-menu" class="sm sm-simple">
-    {% else %}
-    <ul>
+    {% import _self as menus %}
+    {% if items %}
+        {% if menu_level == 0 %}
+            <nav id="main-nav" role="navigation">
+            <ul id="main-menu" class="sm sm-simple">
+        {% else %}
+            <ul>
         {% endif %}
         {% for item in items %}
             <li{{ item.attributes.addClass(classes) }}>
@@ -43,9 +43,9 @@
                 {% endif %}
             </li>
         {% endfor %}
-    </ul>
+        </ul>
     {% endif %}
     {% if menu_level == 0 %}
-</nav>
+        </nav>
     {% endif %}
-    {% endmacro %}
+{% endmacro %}

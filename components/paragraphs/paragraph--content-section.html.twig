@@ -38,50 +38,48 @@
  * @ingroup themeable
  */
 #}
-{%
-  set classes = [
-    'paragraph',
-    'paragraph--type--' ~ paragraph.bundle|clean_class,
-    view_mode ? 'paragraph--view-mode--' ~ view_mode|clean_class,
-  ]
-%}
+{% set classes = [
+'paragraph',
+'paragraph--type--' ~ paragraph.bundle|clean_class,
+view_mode ? 'paragraph--view-mode--' ~ view_mode|clean_class,
+] %}
 
 {% block paragraph %}
 
-  <div{{ attributes.addClass(classes) }}>
-    {% block content %}
-      <div class="paragraph-sections">
-          {% set linkHere = content.field_sc_link.0['#url'] %}
+    <div{{ attributes.addClass(classes) }}>
+        {% block content %}
+            <div class="paragraph-sections">
+                {% set linkHere = content.field_sc_link.0['#url'] %}
 
-          {% if linkHere is not empty %}
-           <a href="{{ content.field_sc_link.0['#url'] }}" class="sc--title-link">
-          {% endif %}
+                {% if linkHere is not empty %}
+                <a href="{{ content.field_sc_link.0['#url'] }}" class="sc--title-link">
+                    {% endif %}
 
-          {{ content.field_sc_title }}
+                    {{ content.field_sc_title }}
 
-          {% if linkHere is not empty %}
-            </a>
-          {% endif %}
+                    {% if linkHere is not empty %}
+                </a>
+                {% endif %}
 
 
-          {% if linkHere is not empty %}
-          <a href="{{ content.field_sc_link.0['#url'] }}" class="sc--title-image">
-          {% endif %}
+                {% if linkHere is not empty %}
+                <a href="{{ content.field_sc_link.0['#url'] }}" class="sc--title-image">
+                    {% endif %}
 
-          {{ content.field_sc_image }}
+                    {{ content.field_sc_image }}
 
-          {% if linkHere is not empty %}
-            </a>
-          {% endif %}
+                    {% if linkHere is not empty %}
+                </a>
+                {% endif %}
 
-          {{ content.field_sc_text }}
+                {{ content.field_sc_text }}
 
-          {% set yeah = content.field_sc_show_link.0['#markup'] %}
+                {% set yeah = content.field_sc_show_link.0['#markup'] %}
 
-          {% if yeah == "Yes" %}
-            {{ content.field_sc_link }}
-          {% endif %}
-      </div>
-    {% endblock %}
-  </div>
+                {% if yeah == "Yes" %}
+                    {{ content.field_sc_link }}
+                {% endif %}
+            </div>
+        {% endblock %}
+    </div>
 {% endblock paragraph %}

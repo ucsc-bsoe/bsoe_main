@@ -65,13 +65,29 @@ button.disabled,
   cursor: not-allowed;
 }
 
-.button-success, .button-green { background-color: var(--button-bg-color-success); }
-.button-info, .button-light-blue { background-color: var(--button-bg-color-info); }
-.button-warning, .button-orange { background-color: var(--button-bg-color-warning); }
-.button-danger, .button-red { background-color: var(--button-bg-color-danger); }
-.button-inverse, .button-black { background-color: var(--button-bg-color-inverse); }
-.button-yellow { background-color: var(--color-yellow); }
+.button-success, .button-green {
+  background-color: var(--button-bg-color-success);
+}
 
+.button-info, .button-light-blue {
+  background-color: var(--button-bg-color-info);
+}
+
+.button-warning, .button-orange {
+  background-color: var(--button-bg-color-warning);
+}
+
+.button-danger, .button-red {
+  background-color: var(--button-bg-color-danger);
+}
+
+.button-inverse, .button-black {
+  background-color: var(--button-bg-color-inverse);
+}
+
+.button-yellow {
+  background-color: var(--color-yellow);
+}
 
 .button-link, button.link {
   background-color: transparent;

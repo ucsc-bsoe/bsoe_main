@@ -13,10 +13,10 @@ div#block-searchform {
   min-width: 250px;
   margin-top: 0;
   margin-right: 0;
-  margin-bottom:0;
+  margin-bottom: 0;
   display: none;
   @include respond-to(medium-up) {
-   display: block;
+    display: block;
   }
 }
 

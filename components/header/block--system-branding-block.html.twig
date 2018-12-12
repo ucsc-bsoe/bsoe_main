@@ -14,21 +14,21 @@
  */
 #}
 {% block content %}
-  {% if site_logo %}
-    <a href="https://www.soe.ucsc.edu" title="{{ 'Home'|t }}" rel="home" class="site-logo">
-      <img src="{{ site_logo }}" alt="{{ 'Home'|t }}" />
-    </a>
-  {% endif %}
+    {% if site_logo %}
+        <a href="https://www.soe.ucsc.edu" title="{{ 'Home'|t }}" rel="home" class="site-logo">
+            <img src="{{ site_logo }}" alt="{{ 'Home'|t }}"/>
+        </a>
+    {% endif %}
 
-  <div class="site-branding">
-      {% if site_name %}
-        <div class="site-name">
-          <a href="{{ path('<front>') }}" title="{{ 'Home'|t }}" rel="home">{{ site_name }}</a>
-        </div>
-      {% endif %}
-      {% if site_slogan %}
-        <div class="site-slogan">{{ site_slogan }}</div>
-      {% endif %}
-  </div>
+    <div class="site-branding">
+        {% if site_name %}
+            <div class="site-name">
+                <a href="{{ path('<front>') }}" title="{{ 'Home'|t }}" rel="home">{{ site_name }}</a>
+            </div>
+        {% endif %}
+        {% if site_slogan %}
+            <div class="site-slogan">{{ site_slogan }}</div>
+        {% endif %}
+    </div>
 
 {% endblock %}

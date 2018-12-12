@@ -46,39 +46,39 @@
 
     {#{{ kint(page) }}#}
 
-  <header role="banner">
-      {{ page.header }}
-      {{ page.secondary_menu }}
+    <header role="banner">
+        {{ page.header }}
+        {{ page.secondary_menu }}
 
-  </header>
+    </header>
 
     {{ page.primary_menu }}
 
-      {{ page.highlighted }}
+    {{ page.highlighted }}
 
-      {{ page.help }}
+    {{ page.help }}
 
-  <main role="main">
-    <a id="main-content" tabindex="-1"></a>{# link is in html.html.twig #}
+    <main role="main">
+        <a id="main-content" tabindex="-1"></a>{# link is in html.html.twig #}
 
-      {# We're going to add breadcrumbs on an as needed basis per entity / content type.
-      <div class="breadcrumb-container">
-          {{ page.breadcrumb }}
-      </div>
-      #}
+        {# We're going to add breadcrumbs on an as needed basis per entity / content type.
+        <div class="breadcrumb-container">
+            {{ page.breadcrumb }}
+        </div>
+        #}
 
-      {# Sidebars are removed - column layout happens in content with paragraphs. #}
+        {# Sidebars are removed - column layout happens in content with paragraphs. #}
 
-    <div class="layout-content">
-        {{ page.content }}
-    </div>{# /.layout-content #}
+        <div class="layout-content">
+            {{ page.content }}
+        </div>{# /.layout-content #}
 
-  </main>
+    </main>
 
     {% if page.footer %}
-      <footer role="contentinfo">
-          {{ page.footer }}
-      </footer>
+        <footer role="contentinfo">
+            {{ page.footer }}
+        </footer>
     {% endif %}
 
 </div>{# /.layout-container #}
