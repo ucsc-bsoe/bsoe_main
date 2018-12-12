@@ -2,10 +2,10 @@
 .site-logo {
   margin-right: 30px;
   max-width: 250px;
-  width: 100%;
   display: inline-block;
   @include respond-to(large-down) {
     display: block;
+    max-width: 150px;
   }
 }
 
