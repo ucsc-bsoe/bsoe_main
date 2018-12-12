@@ -4,6 +4,9 @@
   max-width: 250px;
   width: 100%;
   display: inline-block;
+  @include respond-to(medium-down) {
+    display: block;
+  }
 }
 
 header {
@@ -15,16 +18,26 @@ header {
   line-height: 1.2em;
   font-weight: 700;
   width: calc(100% - 290px);
+  display: inline-block;
   a {
     text-decoration: none;
     &:hover {
       color: var(--color-dark-gray);
     }
   }
+  @include respond-to(medium-down) {
+    display: block;
+    width: 100%;
+  }
 }
 
 .site-branding {
   max-width: var(--page-max-width);
+  margin: auto;
+  display:flex;
+  @include respond-to(medium-down) {
+    display: block;
+  }
 }
 
 .menu--account {
