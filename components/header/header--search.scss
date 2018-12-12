@@ -4,7 +4,6 @@ input[type="search"] {
   padding-top: 0;
   padding-bottom: 0;
   display: inline;
-  background-color: green;
 }
 
 div#block-searchform {
@@ -35,5 +34,9 @@ div#block-searchform {
   margin-right: 0;
   display: inline-block;
   vertical-align: top;
+}
+
+.search-block-form .button {
+  background-color: var(--color-light-gray);
 }
 
