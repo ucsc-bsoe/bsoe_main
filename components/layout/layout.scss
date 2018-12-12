@@ -13,7 +13,6 @@ main {
  * override later if we want things full width (hint - header and footer have wrappers that
  * can be full width. Main is included here, as it has multiple regions.
  */
-.region-primary-menu > nav,
 .region-help,
 .region-highlighted,
 .region-footer,
@@ -77,12 +76,8 @@ nav.tabs {
   margin-bottom: 1em;
 }
 
-.page-node-type-page .block-page-title-block,
 .page-node-type-page .search-block-form {
-  margin-right: 5%;
-  margin-left: 5%;
   text-align: right;
-  background: greenyellow;
 }
 
 .sm-simple > li:first-child > a {
