@@ -1,7 +1,7 @@
 {
   "name": "bsoe_main",
   "version": "1.0.0",
-  "description": "Gulp tasks for BSOE Plain",
+  "description": "Gulp tasks for BSOE Main",
   "license": "GPL-3.0",
   "repository": {},
   "main": "gulpfile.js",
