@@ -84,7 +84,7 @@
 
 // Right Sidebar Layout
 // Main Content Section
-.field--name-field-main-c {
+.main-content-sidebar {
   flex-basis: 73%;
   margin-right: 2%;
   background: pink;
@@ -94,7 +94,7 @@
   }
 }
 // Right Sidebar Layout
-.field--name-field-sidebar-content-right- {
+.secondary-content-sidebar {
   flex-basis: 25%;
   background: lightskyblue;
   @include respond-to(medium-down) {
