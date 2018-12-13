@@ -19,11 +19,12 @@
   }
 }
 
-// 2, 3, 4, 5 column
+// 2, 3, 4, 5 column, and right sidebar
 .field--name-field-2-column-content-section,
 .field--name-field-3-column-content-section,
 .field--name-field-4-column-content-section,
-.field--name-field-5-column-content-section {
+.field--name-field-5-column-cointent-section,
+.paragraph--type--right-sidebar-layout .paragraph-sections {
   display: flex;
   flex-wrap: wrap;
   align-items: stretch;
@@ -78,6 +79,26 @@
   }
   &:nth-child(5n+5) {
     margin-right: 0;
+  }
+}
+
+// Right Sidebar Layout
+// Main Content Section
+.field--name-field-main-c {
+  flex-basis: 73%;
+  margin-right: 2%;
+  background: pink;
+  @include respond-to(medium-down) {
+    flex-basis: 100%;
+    margin-right: 0;
+  }
+}
+// Right Sidebar Layout
+.field--name-field-main-c {
+  flex-basis: 25%;
+  background: greenyellow;
+  @include respond-to(medium-down) {
+    flex-basis: 100%;
   }
 }
 
