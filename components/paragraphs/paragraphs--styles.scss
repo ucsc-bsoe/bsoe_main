@@ -27,6 +27,17 @@
   margin: 0 auto 4em;
 }
 
+.bg--gray.paragraph--type--_-columns,
+.bg--gray.paragraph--type--_-column,
+.bg--light-gray.paragraph--type--_-columns,
+.bg--light-gray.paragraph--type--_-column,
+.bg--yellow.paragraph--type--_-columns,
+.bg--yellow.paragraph--type--_-column,
+.bg--blue.paragraph--type--_-columns,
+.bg--blue.paragraph--type--_-column {
+  padding: 2em 2em 4em;
+}
+
 .bg--gray,
 .bg--light-gray,
 .bg--yellow,
@@ -429,4 +440,3 @@
     }
   }
 }
-
