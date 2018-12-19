@@ -89,8 +89,8 @@
 // Right Sidebar Layout
 // Main Content Section
 .main-content-sidebar {
-  flex-basis: 73%;
-  margin-right: 2%;
+  flex-basis: 69%;
+  margin-right: 5%;
   //background: pink;
   @include respond-to(medium-down) {
     flex-basis: 100%;
