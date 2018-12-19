@@ -162,6 +162,15 @@
   }
 }
 
+.content-section--white-block {
+  .field--name-field-sc-title,
+  .field--name-field-sc-text,
+  .field--name-field-sc-link {
+    padding: 1rem 0;
+    margin-top: 0;
+  }
+}
+
 // Gray Block
 .content-section--gray-block {
   background: var(--color-light-gray);
