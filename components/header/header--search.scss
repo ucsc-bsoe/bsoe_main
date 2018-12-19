@@ -20,6 +20,10 @@ div#block-searchform {
   }
 }
 
+form#search-block-form {
+    text-align: right;
+}
+
 #ucsc-google-search-box input[type=text],
 #masquerade-block-form input[type=text] {
   width: auto;
@@ -39,4 +43,3 @@ div#block-searchform {
 .search-block-form .button {
   background-color: var(--color-gray);
 }
-
