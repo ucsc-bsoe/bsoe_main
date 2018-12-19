@@ -87,7 +87,7 @@
 .main-content-sidebar {
   flex-basis: 73%;
   margin-right: 2%;
-  background: pink;
+  //background: pink;
   @include respond-to(medium-down) {
     flex-basis: 100%;
     margin-right: 0;
@@ -96,7 +96,7 @@
 // Right Sidebar Layout
 .secondary-content-sidebar {
   flex-basis: 25%;
-  background: lightskyblue;
+  //background: lightskyblue;
   @include respond-to(medium-down) {
     flex-basis: 100%;
   }
