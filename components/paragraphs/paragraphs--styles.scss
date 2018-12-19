@@ -166,8 +166,20 @@
   .field--name-field-sc-title,
   .field--name-field-sc-text,
   .field--name-field-sc-link {
-    padding: 1rem 0;
+    padding: .5rem 0 0;
     margin-top: 0;
+  }
+}
+
+.field--name-field-3-column-content-section > .content-section--white-block:nth-child(2) {
+  .field--name-field-sc-title {
+    color: var(--color-yellow);
+  }
+}
+
+.field--name-field-3-column-content-section > .content-section--white-block:nth-child(2) {
+  .field--name-field-sc-title {
+    color: var(--color-dark-gray);
   }
 }
 
