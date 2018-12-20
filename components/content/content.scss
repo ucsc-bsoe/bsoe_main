@@ -30,6 +30,7 @@ a {
 a:hover {
   color: var(--link-color-hover);
   text-decoration: var(--link-text-decoration-hover);
+  opacity: .75;
 }
 
 abbr[title] {
