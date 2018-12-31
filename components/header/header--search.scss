@@ -1,6 +1,6 @@
 .search-block-form input[type="search"] {
   width: auto;
-  margin-right: 5px;
+  margin-right: -4px;
   padding-top: 0;
   padding-bottom: 0;
   display: inline;
@@ -42,4 +42,9 @@ form#search-block-form {
 
 .search-block-form .button {
   background-color: var(--color-gray);
+  font-size: .75em;
+  text-transform: uppercase;
+  font-weight: bold;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
 }

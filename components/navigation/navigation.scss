@@ -6,7 +6,7 @@
 ul.menu {
   margin: 0;
   a.is-active {
-    color: var(--color-text-gray);
+    color: var(--color-gray);
     font-weight: 600;
   }
 }
@@ -58,7 +58,8 @@ ul.menu {
     color: var(--color-gray);
     display: block;
     padding: .25rem .5rem;
-    font-family: var(--font-titles);
+    text-transform: uppercase;
+    font-size: .75em;
     &:hover {
       color: var(--color-primary);
     }
