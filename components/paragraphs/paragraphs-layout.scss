@@ -100,7 +100,6 @@
 }
 .main-content-sidebar > div > div > div > .paragraph-sections {
   margin-bottom: 2em;
-  border: 2px solid red;
 }
 // Right Sidebar Layout
 .secondary-content-sidebar {
@@ -110,7 +109,9 @@
     flex-basis: 100%;
   }
 }
-
+.secondary-content-sidebar > div > div > div > .paragraph-sections {
+  margin-bottom: 2em;
+}
 // Large Slider
 .paragraph--type--large-slider {
   margin-bottom: 2em;
