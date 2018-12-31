@@ -96,9 +96,11 @@
     flex-basis: 100%;
     margin-right: 0;
   }
-  > div > div > div > div > .paragraph-sections {
-    margin-bottom: 1.5em;
-  }
+
+}
+.main-content-sidebar > div > div > div > .paragraph-sections {
+  margin-bottom: 2em;
+  border: 2px solid red;
 }
 // Right Sidebar Layout
 .secondary-content-sidebar {
