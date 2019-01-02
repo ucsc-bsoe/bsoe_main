@@ -94,7 +94,11 @@
   color: var(--color-blue);
 }
 
-.field--name-field-sc-text,
+.secondary-content-sidebar .field--name-field-sc-title {
+  font-size: 1.2em;
+}
+
+  .field--name-field-sc-text,
 .field--name-field-sc-link {
   padding: 0;
 }
