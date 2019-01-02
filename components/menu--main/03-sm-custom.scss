@@ -23,7 +23,8 @@
 .sm-simple a {
   background: white;
   color: var(--color-light-blue);
-  padding-bottom: 0;
+  padding: 11px 20px;
+  line-height: 0;
 }
 
 .sm-simple a:hover,
@@ -31,7 +32,8 @@
 .sm-simple a:active,
 .sm-simple a.highlighted {
   background: var(--color-yellow);
-  padding-bottom: 0;
+  padding: 11px 20px;
+  line-height: 0;
 }
 
 .sm-simple > li > a,
@@ -51,17 +53,5 @@
 .sm-simple > li > a:focus,
 .sm-simple > li > a:hover {
   color: var(--color-yellow);
-}
-
-.sm-simple > li ul {
-  line-height: 0;
-  margin-top: 5px;
-  li {
-    line-height: 0;
-  }
-  a, a:hover, a:active {
-    padding: 11px 20px;
-    line-height: 0;
-  }
 }
 
