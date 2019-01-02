@@ -52,3 +52,16 @@
 .sm-simple > li > a:hover {
   color: var(--color-yellow);
 }
+
+.sm-simple > li ul {
+  line-height: 0;
+  margin-top: 5px;
+  li {
+    line-height: 0;
+  }
+  a {
+    padding: 10px;
+    line-height: 0;
+  }
+}
+
