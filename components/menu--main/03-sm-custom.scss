@@ -7,15 +7,7 @@
 }
 
 .sm-simple > li > ul {
-  margin-top: 5px;
-  a,
-  a:hover,
-  a:focus,
-  a:active,
-  a.highlighted {
-    line-height: 0;
-    padding: 20px;
-  }
+  margin-top: 5px!important;
 }
 
 .sm-simple {
@@ -43,7 +35,7 @@
 .sm-simple a:active,
 .sm-simple a.highlighted {
   background: var(--color-yellow);
-  padding-bottom: 0;
+  line-height: 0;
 }
 
 .sm-simple > li > a,
@@ -56,6 +48,8 @@
   letter-spacing: .5px;
   font-weight: 700;
   text-transform: uppercase;
+  padding-bottom: 0;
+  line-height: auto;
 }
 
 .sm-simple > li > a.highlighted,
