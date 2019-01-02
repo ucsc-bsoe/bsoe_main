@@ -46,6 +46,10 @@
 .bg--blue.paragraph--type--_-columns,
 .bg--blue.paragraph--type--_-column {
   padding: 2em;
+  margin-bottom: 2em;
+  >.paragraph-sections {
+    margin-bottom: 0;
+  }
 }
 
 .bg--gray,
@@ -61,7 +65,7 @@
 }
 
 .bg--light-gray {
-  background: var(--color-soft-gray);
+  background: var(--color-light-gray);
 }
 
 .bg--yellow {
