@@ -30,10 +30,10 @@
   padding-bottom: 0;
 }
 
-.sm-simple a:hover,
-.sm-simple a:focus,
-.sm-simple a:active,
-.sm-simple a.highlighted {
+.sm-simple > li > ul a:hover,
+.sm-simple > li > ul a:focus,
+.sm-simple > li > ul a:active,
+.sm-simple > li > ul a.highlighted {
   background: var(--color-yellow);
   line-height: 0;
 }
@@ -49,7 +49,6 @@
   font-weight: 700;
   text-transform: uppercase;
   padding-bottom: 0;
-  line-height: auto;
 }
 
 .sm-simple > li > a.highlighted,
