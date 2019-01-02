@@ -4,6 +4,10 @@
 
 .sm-simple ul > li {
   width: 100%;
+}
+
+.sm-simple > li > ul {
+  margin-top: 5px;
   a,
   a:hover,
   a:focus,
@@ -12,11 +16,6 @@
     line-height: 0;
     padding: 20px;
   }
-
-}
-
-.sm-simple li > ul {
-  margin-top: 5px;
 }
 
 .sm-simple {
