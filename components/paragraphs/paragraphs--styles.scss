@@ -33,7 +33,8 @@
 .bg--blue.paragraph--type--_-column,
 .bg--white.paragraph--type--_-columns,
 .bg--white.paragraph--type--_-column {
-  margin: 0 auto;
+  margin-right: auto;
+  margin-left: auto;
 }
 
 .bg--gray.paragraph--type--_-columns,
@@ -44,7 +45,7 @@
 .bg--yellow.paragraph--type--_-column,
 .bg--blue.paragraph--type--_-columns,
 .bg--blue.paragraph--type--_-column {
-  padding: 2em 2em 4em;
+  padding: 2em;
 }
 
 .bg--gray,
