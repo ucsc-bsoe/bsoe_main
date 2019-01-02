@@ -6,10 +6,6 @@
   width: 100%;
 }
 
-.sm-simple > li > ul {
-  margin-top: 5px!important;
-}
-
 .sm-simple {
   background: transparent;
   border: none;
@@ -27,15 +23,13 @@
 .sm-simple a {
   background: white;
   color: var(--color-light-blue);
-  padding-bottom: 0;
 }
 
-.sm-simple > li > ul a:hover,
-.sm-simple > li > ul a:focus,
-.sm-simple > li > ul a:active,
-.sm-simple > li > ul a.highlighted {
+.sm-simple a:hover,
+.sm-simple a:focus,
+.sm-simple a:active,
+.sm-simple a.highlighted {
   background: var(--color-yellow);
-  line-height: 0;
 }
 
 .sm-simple > li > a,
