@@ -7,6 +7,10 @@
   display: block;
 }
 
+.sm-simple li > ul {
+  margin-top: 5px!important;
+}
+
 .sm-simple {
   background: transparent;
   border: none;
@@ -31,6 +35,7 @@
 .sm-simple a:active,
 .sm-simple a.highlighted {
   background: var(--color-yellow);
+  color: var(--color-dark-gray);
 }
 
 .sm-simple > li > a,
