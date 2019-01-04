@@ -201,18 +201,6 @@ field--name-field-3-column-content-section > .content-section--white-block .fiel
   text-transform: uppercase;
 }
 
-.field--name-field-3-column-content-section > .content-section--white-block:nth-child(2) {
-  .field--name-field-sc-title {
-    color: var(--color-yellow);
-  }
-}
-
-.field--name-field-3-column-content-section > .content-section--white-block:nth-child(3) {
-  .field--name-field-sc-title {
-    color: var(--color-gray);
-  }
-}
-
 // Gray Block
 .content-section--gray-block {
   background: var(--color-light-gray);
