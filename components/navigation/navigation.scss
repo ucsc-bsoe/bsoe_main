@@ -6,7 +6,7 @@
 ul.menu {
   margin: 0;
   a.is-active {
-    color: var(--color-gray);
+    color: var(--color-text-gray);
     font-weight: 600;
   }
 }
@@ -17,7 +17,6 @@ ul.menu {
     display: inline-block;
   }
   .menu-item {
-    padding-top: 0;
   }
 }
 
